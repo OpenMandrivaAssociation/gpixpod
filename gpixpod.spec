@@ -1,6 +1,6 @@
 %define name	gpixpod
 %define version	0.6.2
-%define release %mkrel 3
+%define release %mkrel 4
 
 Name: 	 	%{name}
 Summary: 	Photo manager for capable iPods
@@ -58,6 +58,8 @@ convert -size 16x16 GPixPod_icon.png $RPM_BUILD_ROOT/%_miconsdir/%name.png
 
 mv %buildroot%_datadir/doc/%name installed-docs
 mv %buildroot%py_platsitedir/gpixpod* %buildroot%_prefix/lib/%name/
+
+perl -pi -e "s/python2.4/python/" %buildroot%_bindir/%name
 
 %clean
 rm -rf $RPM_BUILD_ROOT
