@@ -11,7 +11,6 @@ Source:		http://prdownloads.sourceforge.net/%name/%name-%{version}.tar.bz2
 URL:		http://gpixpod.sourceforge.net/
 License:	GPL
 Group:		Graphics
-BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	ImageMagick
 BuildRequires:	python-devel
 BuildRequires:	gtk+2-devel
