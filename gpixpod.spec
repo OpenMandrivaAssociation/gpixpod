@@ -36,10 +36,6 @@ rm -rf $RPM_BUILD_ROOT installed-docs
 python setup.py install --root=$RPM_BUILD_ROOT
 
 #menu
-mkdir -p $RPM_BUILD_ROOT%{_menudir}
-cat << EOF > $RPM_BUILD_ROOT%{_menudir}/%{name}
-?package(%{name}): command="%{name}" icon="%{name}.png" needs="x11" title="GPixPod" longtitle="Photo Manager for the iPod" section="Multimedia/Graphics" xdg="true"
-EOF
 
 desktop-file-install --vendor="" \
   --remove-category="Application" \
@@ -79,7 +75,6 @@ rm -rf $RPM_BUILD_ROOT
 %_prefix/lib/%name
 %py_platsitedir/*
 %_mandir/man1/%name.1*
-%{_menudir}/%name
 %{_liconsdir}/%name.png
 %{_iconsdir}/%name.png
 %{_miconsdir}/%name.png
