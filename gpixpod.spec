@@ -8,8 +8,9 @@ Version: 	%{version}
 Release: 	%{release}
 
 Source:		http://prdownloads.sourceforge.net/%name/%name-%{version}.tar.bz2
+Patch:		gpixpod-0.6.2-close-about.patch
 URL:		http://gpixpod.sourceforge.net/
-License:	GPL
+License:	GPLv2+
 Group:		Graphics
 BuildRoot:	%{_tmppath}/%{name}-buildroot
 BuildRequires:	ImageMagick
@@ -27,6 +28,7 @@ on recent Apple iPod models.
 
 %prep
 %setup -q
+%patch -p1
 
 %build
 python setup.py build
