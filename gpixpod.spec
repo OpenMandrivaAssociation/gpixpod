@@ -13,7 +13,7 @@ URL:		http://gpixpod.sourceforge.net/
 License:	GPLv2+
 Group:		Graphics
 BuildRoot:	%{_tmppath}/%{name}-buildroot
-BuildRequires:	ImageMagick
+BuildRequires:	imagemagick
 BuildRequires:	python-devel
 BuildRequires:	gtk+2-devel
 BuildRequires:	desktop-file-utils
