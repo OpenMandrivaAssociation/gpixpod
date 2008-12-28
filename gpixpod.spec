@@ -1,6 +1,6 @@
 %define name	gpixpod
 %define version	0.6.2
-%define release %mkrel 5
+%define release %mkrel 6
 
 Name: 	 	%{name}
 Summary: 	Photo manager for capable iPods
