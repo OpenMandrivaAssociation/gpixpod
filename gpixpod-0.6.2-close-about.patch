@@ -1,0 +1,12 @@
+diff -p -up gpixpod-0.6.2/gpixpod.py~ gpixpod-0.6.2/gpixpod.py
+--- gpixpod-0.6.2/gpixpod.py~	2006-10-11 16:38:05.000000000 +0200
++++ gpixpod-0.6.2/gpixpod.py	2008-09-03 22:16:25.000000000 +0200
+@@ -1597,6 +1597,8 @@ class GPixPod:
+ 	    self.aboutdlg.set_icon_from_file(self.icon)
+         if self.logo:
+             self.aboutdlg.set_logo(gtk.gdk.pixbuf_new_from_file(self.logo))
++        response = self.aboutdlg.run()
++        self.aboutdlg.hide()
+ 
+     def ShowPreferences(self, widget):
+         """ Show the preferences dialog """
