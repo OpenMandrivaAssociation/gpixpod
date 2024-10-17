@@ -9,7 +9,7 @@ Release: 	%{release}
 
 Source0:		http://prdownloads.sourceforge.net/%name/%name-%{version}.tar.bz2
 Patch0:		gpixpod-0.6.2-close-about.patch
-URL:		http://gpixpod.sourceforge.net/
+URL:		https://gpixpod.sourceforge.net/
 License:	GPLv2+
 Group:		Graphics
 BuildRequires:	imagemagick
